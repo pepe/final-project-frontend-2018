@@ -101,18 +101,41 @@ textarea {
  /* ==========================================================================
    Author's custom styles
    ========================================================================== */
+ html {
+   font-family: Roboto;
+ }
 
- header {
+
+
+header {
    background-color: #2196F3;
    color: white;
    padding: 1rem 3rem;
+   display: flex;
+   justify-content: space-between;
  }
 
 header h1 {
   margin: 0;
 }
 
+header nav a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.25rem;
+}
 
+main, footer {
+  padding: 1rem 3rem;
+}
+
+footer {
+  position: fixed;
+  bottom: 0px;
+  background-color: #2196F3;
+  color: white;
+  width: 100vw;
+}
 
 
 
