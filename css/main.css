@@ -7,7 +7,7 @@
  * Kroc Camen, and the H5BP dev community and team.
  */
 
- 
+
 /* ==========================================================================
    Base styles: opinionated defaults
    ========================================================================== */
@@ -102,7 +102,15 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
+ header {
+   background-color: #2196F3;
+   color: white;
+   padding: 1rem 3rem;
+ }
 
+header h1 {
+  margin: 0;
+}
 
 
 
@@ -197,7 +205,7 @@ textarea {
   clear: both;
 }
 
- 
+
 /* ==========================================================================
    EXAMPLE Media Queries for Responsive Design.
    These examples override the primary ('mobile first') styles.
@@ -215,7 +223,7 @@ textarea {
     /* Style adjustments for high resolution devices */
 }
 
- 
+
 /* ==========================================================================
    Print styles.
    Inlined to avoid the additional HTTP request:
@@ -291,5 +299,3 @@ textarea {
         page-break-after: avoid;
     }
 }
-
-
