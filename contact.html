@@ -33,11 +33,12 @@
               <a class="nav-link" href="index.html">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="pepe.html">pepe's page  <span class="sr-only">(current)</span></a>
+              <a class="nav-link" href="pepe.html">pepe's page</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="contact.html">Contact</a>
-              </li>
+              <a class="nav-link" href="contact.html">Contact<span class="sr-only">(current)</span> </a>
+            </li>
+  
           </ul>
         </div>
     </nav>
@@ -45,15 +46,44 @@
 
 
   <main>
-    <h2>true ensues</h2>
-    <p>
-pepe is a strange beast and party animal.
-    <p>
+    <h2 id="form-header">I love to be contacted here</h2>
+    <form id="contact-form">
+    <div class="form-group">
+        <label for="exampleInputEmail1">Email address</label>
+        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+        <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+    </div>
+    <div class="form-group">
+        <label for="exampleFormControlTextarea1">Description of the problem</label>
+        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+    </div>
+    <div class="form-group">
+        <label for="exampleFormControlSelect2">Severity of the problem</label>
+        <select class="form-control" id="exampleFormControlSelect2">
+            <option>Low</option>
+            <option>Medium</option>
+            <option>High</option>
+        </select>
+    </div>
+    <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
   </main>
   <footer class="bd-footer text-muted">
     All right reserved for pepe 2018
   </footer>
   </container>
+  <script>
+      var form = document.getElementById("contact-form");
+      var header = document.getElementById("form-header");
+
+      form.onsubmit = function (event) {
+        console.log(event);
+        event.stopPropagation();
+        event.preventDefault();
+        form.hidden = true;
+        header.innerHTML = "We will check back soon"
+      }
+  </script>
   <script src="js/vendor/modernizr-3.6.0.min.js"></script>
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
